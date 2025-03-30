@@ -1,7 +1,8 @@
-//kfewkf
+
 import java.util.Scanner;
 
 public class assignment1 {
+    //Time and space complexity are O(n)
     public static int findMin(int[] arr, int n) {
         if (n == 1) {
             return arr[0];
@@ -20,7 +21,7 @@ public class assignment1 {
         int minimum = findMin(arr, arr.length);
         System.out.println(minimum);
     }
-
+    //time complexity is O(n) and the space complexity is O(n)
     public static double findAvg(int[] arr, int n) {
         if (n == 1) {
             return arr[0];
@@ -39,6 +40,7 @@ public class assignment1 {
         double avgofarr = findAvg(arr, arr.length);
         System.out.println(avgofarr);
     }
+    //the time complexity is O(n) and the space complexity is O(n)
     public static int findPrime(int n, int m) {
         if (n <= 1) {
             return 0;
@@ -61,6 +63,7 @@ public class assignment1 {
             System.out.println("Composite");
         }
     }
+    //the time complexity is O(n) and the space complexity is O(n)
     public static int findfactorial(int n) {
         if (n == 0){
             return 1;
@@ -73,6 +76,7 @@ public class assignment1 {
         int fact = findfactorial(n);
         System.out.println( n+ "! = " + fact );
     }
+    //the time complexity is O(2^n) and the space complexity is O(n).
     public static int findFibonacci (int n) {
         if (n < 2) {
             return n;
@@ -89,6 +93,7 @@ public class assignment1 {
         int n = sc.nextInt();
         System.out.println(findFibonacci(n));
     }
+    //the time complexity is O(n) and the space complexity is O(n)
     public static int findPower(int a, int n){
         if (a == 0){
             return 0;
@@ -104,6 +109,7 @@ public class assignment1 {
         int n = sc.nextInt();
         System.out.println(findPower(a, n));
     }
+    //the time complexity is O(n * n!) and the space complexity is O(n).
     public static void findPermutations(char[] arr, int a, int b) {
         if (a == b) {
             for (char c : arr) {
@@ -129,6 +135,7 @@ public class assignment1 {
         char[] arr = input.toCharArray();
         findPermutations(arr, 0, arr.length - 1);
     }
+    //the time complexity is O(n) and the space complexity is O(n)
     public static boolean findDigits(char[] arr, int n) {
         if (arr.length == 0) {
             return false;
@@ -153,6 +160,7 @@ public class assignment1 {
             System.out.println("No");
         }
     }
+    //the time complexity is O(2^n) and the space complexity is O(n).
     public static int findBinomial(int n, int k) {
         if (k > n) {
             return 0;
@@ -168,6 +176,7 @@ public class assignment1 {
         int k = sc.nextInt();
         System.out.println(findBinomial(n, k));
     }
+    //the time and space complexity of the algorithm are O(log(min(a, b))).
     public static int findAlgorithm(int a, int b){
         if(a==b){
             return 1;
