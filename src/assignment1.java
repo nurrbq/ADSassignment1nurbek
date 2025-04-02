@@ -151,8 +151,8 @@ public class assignment1 {
 
     public static void task8() {
         Scanner sc = new Scanner(System.in);
-        String input = sc.nextLine();          // read input like "12345"
-        char[] arr = input.toCharArray();      // convert to char array
+        String input = sc.nextLine();         
+        char[] arr = input.toCharArray();      
 
         if (findDigits(arr, 0)) {
             System.out.println("Yes");
